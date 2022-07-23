@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message PbMessage
+{
+    enum MESSAGE_TYPE
+    {
+        ACK = 0;
+        NACK = 1;
+        USER = 2;
+        COMMAND = 3;
+        END = 4;
+    }
+    required fixed32 type=1;
+    required string msg=2;
+}
