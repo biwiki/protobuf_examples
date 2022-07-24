@@ -43,3 +43,22 @@ Type 0, message Adam
 Type 0, message Adam
 Type 0, message Adam
 ```
+Similarly, for the client side, `serdes/py_client/serdes_py_client.py` can be used for the same purpose:
+```
+$ serdes/py_client/serdes_py_client.py 
+readThread received data
+type: 1
+msg: "Unknown"
+
+readThread received data
+type: 0
+msg: "Eva"
+
+readThread received data
+type: 0
+msg: "Eva"
+
+readThread received data
+type: 0
+msg: "Eva"
+```

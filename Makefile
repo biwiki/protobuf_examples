@@ -23,7 +23,7 @@ ${OUTPUT}/basic: ${BASIC}/main.cpp ${MSG_OBJ}
 	@mkdir -p $(dir $@)
 	${CXX} ${CXX_FLAGS} ${INC_DIRS} $^ -lprotobuf -o $@
 
-clean:
+clean: serdes_clean
 	rm -rf ${OUTPUT}
 	rm -f ${MSG_CC} ${MSG_CC:.cc=.h} ${MSG_OBJ}
 
