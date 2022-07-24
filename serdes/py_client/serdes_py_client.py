@@ -13,9 +13,8 @@ try:
 except:
     sys.exit("Failed to connect to server")
 
-read_thread_running = True
 def readThread():
-    while read_thread_running:
+    while True:
         buff = s.recv(1024)
         print("readThread received data")
         pl = proto.PbMessage()
